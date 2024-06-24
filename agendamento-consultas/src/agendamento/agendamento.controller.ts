@@ -11,6 +11,8 @@ export class AgendamentoController {
     return this.agendamentoService.findAll();
   }
 
+
+
   @Get(':id')
   findOne(@Param('id') id: string): Promise<Agendamento> {
     return this.agendamentoService.findOne(+id);
